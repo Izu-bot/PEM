@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Personal Expanse Manager.Core/1.0.0": {
+        "runtime": {
+          "Personal Expanse Manager.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Personal Expanse Manager.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

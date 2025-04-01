@@ -1,0 +1,11 @@
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/bin/Debug/net9.0/Personal Expanse Manager.Core.deps.json
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/bin/Debug/net9.0/Personal Expanse Manager.Core.dll
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/bin/Debug/net9.0/Personal Expanse Manager.Core.pdb
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/obj/Debug/net9.0/Personal Expanse Manager.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/obj/Debug/net9.0/Personal Expanse Manager.Core.AssemblyInfoInputs.cache
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/obj/Debug/net9.0/Personal Expanse Manager.Core.AssemblyInfo.cs
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/obj/Debug/net9.0/Personal Expanse Manager.Core.csproj.CoreCompileInputs.cache
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/obj/Debug/net9.0/Personal Expanse Manager.Core.dll
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/obj/Debug/net9.0/refint/Personal Expanse Manager.Core.dll
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/obj/Debug/net9.0/Personal Expanse Manager.Core.pdb
+/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/Personal Expanse Manager/obj/Debug/net9.0/ref/Personal Expanse Manager.Core.dll
