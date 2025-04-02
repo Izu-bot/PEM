@@ -10,10 +10,10 @@ public class ListarDespesasUseCase
 
     public ListarDespesasUseCase(IDespesaRepository repository) => _repository = repository;
 
-    public List<DespesaDTO> Executar()
+    public List<VisualizacaoDespesaDTO> Executar()
     {
         var despesas = _repository.BuscarTodas();
 
-        return despesas.Select(d => new DespesaDTO(d.Id, d.Valor.Valor, d.Categoria.ToString(), d.Data)).ToList();
+        return despesas.Select(d => new VisualizacaoDespesaDTO(d.Id, d.Valor.Valor, d.Categoria.ToString(), d.Data)).ToList();
     }
 }

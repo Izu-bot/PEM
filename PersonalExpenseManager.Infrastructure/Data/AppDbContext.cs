@@ -7,17 +7,30 @@ namespace PersonalExpenseManager.Infrastructure.Data;
 
 public class AppDbContext : DbContext
 {
-    public DbSet<Despesa> Despesas { get; set; }
+    public DbSet<Despesa> Despesa { get; set; }
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Despesa>()
-            .Property(d => d.Valor)
-            .HasConversion(
-                v => v.Valor, // Converte ValueObject Dinheiro para decimal
-                v => new Dinheiro(v) // Converte de decimal para Dinheiro ao ler do BD
-            );
+        modelBuilder.Entity<Despesa>(entity =>
+        {
+            entity.ToTable("Despesa");
+
+            entity.HasKey(d => d.Id);
+
+            entity.Property(d => d.Valor)
+                .HasConversion(
+                    v => v.Valor,
+                    v => new Dinheiro(v)
+                );
+            
+            entity.Property(d => d.Data);
+
+            entity.Property(d => d.Categoria)
+                .HasConversion<string>(); // Converte o enum para uma string
+        });
+
+        base.OnModelCreating(modelBuilder);
     }
 }

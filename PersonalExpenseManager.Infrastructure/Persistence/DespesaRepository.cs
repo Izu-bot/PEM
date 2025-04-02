@@ -14,15 +14,15 @@ public class DespesaRepository : IDespesaRepository
 
     public bool Salvar(Despesa despesa)
     {
-        _context.Despesas.Add(despesa);
+        _context.Despesa.Add(despesa);
         return _context.SaveChanges() > 0;
     }
 
-    public List<Despesa> BuscarTodas() => _context.Despesas.ToList();
+    public List<Despesa> BuscarTodas() => _context.Despesa.ToList();
 
-    public List<Despesa> BuscarPorCategoria(Categoria categoria) => _context.Despesas.Where(d => d.Categoria == categoria).ToList();
+    public List<Despesa> BuscarPorCategoria(Categoria categoria) => _context.Despesa.Where(d => d.Categoria == categoria).ToList();
 
-    public List<Despesa> BuscarPorPeriodo(int mes, int ano) => _context.Despesas.Where(d => d.Data.Month == mes && d.Data.Year == ano).ToList();
+    public List<Despesa> BuscarPorPeriodo(int mes, int ano) => _context.Despesa.Where(d => d.Data.Month == mes && d.Data.Year == ano).ToList();
 
     public bool Deletar(Guid id)
     {
@@ -30,9 +30,9 @@ public class DespesaRepository : IDespesaRepository
 
         if (despesa == null) return false;
 
-        _context.Despesas.Remove(despesa);
+        _context.Despesa.Remove(despesa);
         return _context.SaveChanges() > 0;
     }
 
-    public Despesa? BuscarPorId(Guid id) => _context.Despesas.FirstOrDefault(d => d.Id == id);
+    public Despesa? BuscarPorId(Guid id) => _context.Despesa.FirstOrDefault(d => d.Id == id);
 }

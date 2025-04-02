@@ -11,13 +11,13 @@ public class FiltrarDesepsasUseCase
 
     public FiltrarDesepsasUseCase(IDespesaRepository repository) => _repository = repository;
 
-    public List<DespesaDTO> Executar(string categoria)
+    public List<VisualizacaoDespesaDTO> Executar(string categoria)
     {
         if (!Enum.TryParse<Categoria>(categoria, true, out var categoriaValida)) 
             throw new ArgumentException("Categoria inválida.");
 
         var despesas = _repository.BuscarPorCategoria(categoriaValida);
 
-        return despesas.Select(d => new DespesaDTO(d.Id, d.Valor.Valor, d.Categoria.ToString(), d.Data)).ToList();
+        return despesas.Select(d => new VisualizacaoDespesaDTO(d.Id, d.Valor.Valor, d.Categoria.ToString(), d.Data)).ToList();
     }
 }
