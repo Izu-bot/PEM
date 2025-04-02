@@ -1,4 +1,0 @@
-/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/obj/Debug/net9.0/Personal Expense Manager.GeneratedMSBuildEditorConfig.editorconfig
-/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/obj/Debug/net9.0/Personal Expense Manager.AssemblyInfoInputs.cache
-/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/obj/Debug/net9.0/Personal Expense Manager.AssemblyInfo.cs
-/home/kauan/Documents/Estudos/C#/Projetos/Personal Expense Manager/obj/Debug/net9.0/Personal Expense Manager.csproj.CoreCompileInputs.cache
