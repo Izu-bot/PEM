@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../Personal Expanse Manager/PersonalExpenseManager.Core.csproj" />
     <ProjectReference Include="../PersonalExpenseManager.Application/PersonalExpenseManager.Application.csproj" />
     <ProjectReference Include="../PersonalExpenseManager.Infrastructure/PersonalExpenseManager.Infrastructure.csproj" />
   </ItemGroup>
